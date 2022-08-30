@@ -1,5 +1,5 @@
 /* google font import */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
 /* global declare */
 body {
@@ -38,7 +38,7 @@ body {
     display: block;
 }
 .primary-button {
-    padding: 10px 15px;
+    padding: 12px 20px;
     border-radius: 5px;
     background-color: crimson;
     color: white;
@@ -89,31 +89,19 @@ body {
     margin-right: 15px;
     border-radius: 10px;
     border: 1px solid rgba(128, 128, 128, 0.5);
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.card p {
-    margin: 0;
+.card-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.card img {
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-}
-.card-bottom {
-    padding: 15px;
-}
-.card p span {
-    display: inline-block;
-    margin-right: 15px;
-}
-.card-btn {
-    text-align: center;
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    border: 1px solid black;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: "Roboto", sans-serif;
+.card-top img {
+    width: 40%;
 }
 
 /* footer starts */
