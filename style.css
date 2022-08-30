@@ -38,6 +38,8 @@ body {
     display: block;
     animation: fadeIn 4s infinite alternate;
 }
+
+/* animation */
 @keyframes fadeIn {
     0% {
         opacity: 0;
