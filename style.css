@@ -35,6 +35,7 @@ body {
 }
 .banner-right img {
     width: 90%;
+    display: block;
 }
 .banner-button {
     padding: 15px;
@@ -196,6 +197,18 @@ body {
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .container {
         width: 90%;
+    }
+    .banner-left {
+        padding: 50px;
+    }
+    .banner-left h1 {
+        font-size: 40px;
+    }
+    .banner-left p {
+        margin-bottom: 15px;
+    }
+    .banner-right img {
+        width: 100%;
     }
     .main {
         display: block;
