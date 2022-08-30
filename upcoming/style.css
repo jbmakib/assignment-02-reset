@@ -134,6 +134,16 @@ body {
 .footer-nav p {
     margin: 10px;
 }
+.social {
+    margin-top: 30px;
+}
+.social a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 10px;
+}
 
 /* responsive starts */
 
