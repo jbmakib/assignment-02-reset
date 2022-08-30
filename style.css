@@ -208,9 +208,12 @@ body {
 
 /* tablet */
 @media screen and (min-width: 577px) and (max-width: 992px) {
+    /* global declare */
     .container {
         width: 90%;
     }
+
+    /* banner design */
     .banner-left {
         padding: 50px;
     }
@@ -223,6 +226,8 @@ body {
     .banner-right img {
         width: 100%;
     }
+
+    /* main section */
     .main {
         display: block;
         margin-top: 50px;
@@ -245,6 +250,8 @@ body {
     .card-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* footer */
     .footer {
         padding: 50px 0;
     }
