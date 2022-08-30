@@ -37,7 +37,7 @@ body {
     width: 90%;
     display: block;
 }
-.banner-button {
+.primary-button {
     padding: 15px;
     border-radius: 5px;
     background-color: crimson;
@@ -45,6 +45,7 @@ body {
     text-decoration: none;
     display: inline-block;
 }
+
 /* main section style */
 .main {
     display: grid;
@@ -68,6 +69,9 @@ body {
     padding: 15px;
     font-weight: 700;
     border: 1px solid rgba(128, 128, 128, 0.2);
+}
+.main .tablet-btn {
+    display: none;
 }
 #active-nav {
     background: crimson;
@@ -214,6 +218,10 @@ body {
         display: block;
         margin-top: 50px;
         margin-bottom: 50px;
+    }
+    .main .tablet-btn {
+        display: block;
+        text-align: center;
     }
     .main-nav {
         display: grid;
