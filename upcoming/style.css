@@ -35,15 +35,17 @@ body {
 }
 .banner-right img {
     width: 90%;
+    display: block;
 }
-.banner-button {
-    padding: 15px;
+.primary-button {
+    padding: 10px 15px;
     border-radius: 5px;
     background-color: crimson;
     color: white;
     text-decoration: none;
     display: inline-block;
 }
+
 /* main section style */
 .main {
     display: grid;
@@ -66,6 +68,10 @@ body {
     border-radius: 10px;
     padding: 15px;
     font-weight: 700;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+}
+.main .tablet-btn {
+    display: none;
 }
 #active-nav {
     background: crimson;
@@ -128,4 +134,112 @@ body {
 }
 .footer-nav p {
     margin: 10px;
+}
+
+/* responsive starts */
+
+/* mobile */
+@media screen and (max-width: 576px) {
+    /* global */
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* header responsive */
+    .header {
+        display: block;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .banner-left {
+        padding: 10px;
+    }
+    .banner-left h1 {
+        font-size: 30px;
+    }
+    .banner-left p {
+        margin-bottom: 10px;
+    }
+    .banner-right {
+        align-self: end;
+    }
+    .banner-right img {
+        width: 100%;
+    }
+
+    /* main section responsive */
+    .main {
+        display: block;
+    }
+    .main-nav {
+        background: none;
+    }
+    .card-container {
+        display: block;
+    }
+
+    /* footer starts */
+    .footer {
+        padding: 10px;
+        text-align: center;
+        background-color: #18191a;
+    }
+    .footer h1 {
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    }
+    .footer-nav {
+        display: block;
+    }
+    .footer-nav p {
+        margin-bottom: 15px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+    .banner-left {
+        padding: 50px;
+    }
+    .banner-left h1 {
+        font-size: 40px;
+    }
+    .banner-left p {
+        margin-bottom: 15px;
+    }
+    .banner-right img {
+        width: 100%;
+    }
+    .main {
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .main .tablet-btn {
+        display: block;
+        text-align: center;
+    }
+    .main-nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+        justify-content: space-evenly;
+        background: none;
+    }
+    .main-nav a {
+        margin: 15px;
+    }
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer {
+        padding: 50px 0;
+    }
+    .footer-nav {
+        flex-wrap: wrap;
+    }
 }
